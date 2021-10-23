@@ -1,0 +1,8 @@
+[
+    {"nombre":"Nahuel Tenis", "direccion": "Victorino La Plaza 154, Tigre", "telefono": "4658-8258"},
+    {"nombre":"Lawn Tenis", "direccion": "Pueyrredon 1545, CABA", "telefono": "4744-0058"},
+    {"nombre":"Encuentro", "direccion": "Cotagaita 451, Ramos Mejia", "telefono": "4825-3355"},
+    {"nombre":"San Marino", "direccion": "Avenida Gaona 2544, Ciudadadela", "telefono": "4653-5598"},
+    {"nombre":"Huracan San Justo", "direccion": "Arturo Ilia 4587, San Justo", "telefono": "4489-4568"},
+    {"nombre":"Casa Central", "direccion": "Padre Elizalde 152", "telefono": "4653-0825"}
+]

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locos x el Tenis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/e78fc278fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header> 
+        <article class="encabezado">
+            <img src="../assets/torneos.jpg" alt="Logo" class="encabezadoLogo">
+            <h1>Locos x el Tenis</h1>
+        </article>    
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="partidos1vs1.html">Partidos 1vs1</a>
+                <a class="nav-link" href="tienda.html">Tienda</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <section class="tienda">
+    <div class="container">
+      <h2>Mi Carrito</h2>
+      <hr>
+
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Acción</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="items"></tbody>
+          <tfoot>
+            <tr id="footer">
+              <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+            </tr>
+          </tfoot>
+        </table>
+
+      <div class="row" id="cards"></div>
+
+  </div>
+
+
+
+  <template id="template-footer">
+      <th scope="row" colspan="2">Total productos</th>
+      <td>10</td>
+      <td>
+          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+              vaciar todo
+          </button>
+      </td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+  </template>
+  <template id="template-carrito" >
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+  <template id="template-card">
+      <div class="col-12 mb-2 col-md-4">
+        <div class="card">
+          <img src="" alt="" class="img-fluid" max-width: 100% height="auto">
+          <div class="card-body">
+            <h5>Titulo</h5>
+            <p>precio</p>
+            <button class="btn btn-dark">Comprar</button>
+          </div>
+        </div>
+      </div>
+  </template>
+
+ 
+  </section>
+
+
+    
+  <footer>
+    <article>
+      <a href=""><i class="fab fa-instagram"></i></a>
+      <a href=""><i class="fab fa-facebook-f"></i></a>
+      <a href=""><i class="fab fa-whatsapp"></i></a>
+    </article>
+    <h4 class="paraTransicion"><strong>Dirección:</strong> Padre Elizalde 152, Ciudadela, Buenos Aires</h4>
+    <h4 class="paraTransicion"><strong>Telefono:</strong> 011-4653-0825</h4>
+    <h4 class="paraTransicion"><strong>Horario de atención:</strong> de 8:00 a 17:00hs</h4>
+    <img src="../assets/torneos.jpg" alt="Logo" class="zocaloLogo">
+  </footer>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="./js/micarrito.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
