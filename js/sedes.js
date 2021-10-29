@@ -1,4 +1,4 @@
-let informacion = "https://github.com/cavalieriFranco/LocosxTenis/blob/master/js/sedes.js";
+let informacion = "http://127.0.0.1:5500/json/datos.json";
 
 $.getJSON(informacion, function (respuesta,estado){
     if(estado === "success"){
