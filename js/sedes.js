@@ -1,4 +1,4 @@
-let informacion = "http://127.0.0.1:5500/LocosxTenis/json/datos.json;
+let informacion = "http://127.0.0.1:5500/LocosxTenis/json/datos.json";
 
 $.getJSON(informacion, function (respuesta,estado){
     if(estado === "success"){
