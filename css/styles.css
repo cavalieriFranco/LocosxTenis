@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #676363;
+  background-color: grey;
   position: relative;
 }
 
@@ -101,6 +101,7 @@ h1 {
 }
 
 footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,14 +112,12 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: -webkit-gradient(linear, left top, right top, from(black), to(grey));
-  background-image: linear-gradient(to right, black, grey);
-  border: 15px solid rgba(238, 232, 170, 0.377);
+  border: 10px solid grey;
   margin-bottom: none;
-  position: relative;
 }
 
 .zocaloLogo {
+  position: relative;
   height: 70px;
   width: 70px;
   margin-left: 50px;
@@ -173,6 +172,7 @@ i {
 }
 
 .paraTransicion:hover {
+  position: relative;
   -webkit-transition: 2s;
   transition: 2s;
   font-size: 2rem;
