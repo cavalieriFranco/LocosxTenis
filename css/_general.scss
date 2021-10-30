@@ -44,6 +44,11 @@ $width1: $width - 350;
     animation-duration:2s;
     animation-delay: 0s;
   }
+  .carousel-item-active{
+    position: relative;
+    width: auto;
+    height: auto;
+  }
   @keyframes entradaTitulo{
     0%{ 
       opacity: 0;  
@@ -183,10 +188,7 @@ $width1: $width - 350;
       margin-left:25%;
       margin-right:25%;
     }
-    .videoInicio{
-      width: 350px;
-      height:350px;
-    }
+
     .ubicacion{
       width: 150px;
       height: 100px;
@@ -224,10 +226,10 @@ $width1: $width - 350;
       margin-left:50px;
     }  
     h5{
-      font-size:15px;
+      font-size:25px;
     } 
     p{
-      font-size: 10px;
+      font-size: 20px;
     }
   }
 
@@ -238,10 +240,6 @@ $width1: $width - 350;
       align-items: center;
       margin-left:25%;
       margin-right:25%;
-    }
-    .videoInicio{
-      width: 300px;
-      height:250px;
     }
     .ubicacion{
       width: 100px;
@@ -276,10 +274,10 @@ $width1: $width - 350;
       margin-left:50px;
     }  
     h5{
-      font-size:15px;
+      font-size:25px;
     } 
     p{
-      font-size: 10px;
+      font-size: 20px;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -289,10 +287,6 @@ $width1: $width - 350;
       align-items: center;
       margin-left:25%;
       margin-right:25%;
-    }
-    .videoInicio{
-      width: 550px;
-      height:400px;
     }
     .ubicacion{
       width: 150px;
@@ -327,10 +321,10 @@ $width1: $width - 350;
       margin-left:50px;
     }  
     h5{
-      font-size:20px;
+      font-size:35px;
     } 
     p{
-      font-size: 15px;
+      font-size: 25px;
     }
   }
   @media only screen and (min-width: 1024px) and (max-width: 1366px) {
@@ -340,10 +334,6 @@ $width1: $width - 350;
       align-items: center;
       margin-left:25%;
       margin-right:25%;
-    }
-    .videoInicio{
-      width: 750px;
-      height:600px;
     }
     .ubicacion{
       width: 250px;

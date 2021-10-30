@@ -1,19 +1,30 @@
-
 $(".botones").append (`
 <br><button type="submit">Enviar</button><br><br>
 `)
 
-$(".formulario").submit((e)=>{
-e.preventDefault();
+$(".formulario").submit((e) => {
 
-let hijos = $(e.target).children();
+        e.preventDefault();
 
-console.log ("Nombre: " + hijos[1].value);
-console.log ("Edad: " + hijos[3].value);
-console.log ("Telefono: " + hijos[5].value);
-console.log ("Horarios disponibles:" + hijos[7].value);
+        let fields = e.target.children
 
+        let options = fields.categoria.children.select.children;
+        let categoria = "";
+        Array.from(options).forEach(element => {
+                if (element.selected) {
+                        categoria = element.value;
+                }
+        });
 
+        let datos = {}
+        datos["nombre"] = fields.nombre.value;
+        datos["edad"] = fields.edad.value;
+        datos["telefono"] = fields.telefono.value;
+        datos["horarios"] = fields.horarios.value;
+        datos["categoria"] = categoria;
+        datos["comentarios"] = fields.comentarios.value;
+
+        localStorage.setItem(`datos1vs1`, JSON.stringify (datos))
 })
 
 $("#tituloPartidos").css("color","rgba(245, 245, 245, 0.543)")
