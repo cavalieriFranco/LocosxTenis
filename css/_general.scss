@@ -44,11 +44,7 @@ $width1: $width - 350;
     animation-duration:2s;
     animation-delay: 0s;
   }
-  .carousel-item-active{
-    position: relative;
-    width: auto;
-    height: auto;
-  }
+  
   @keyframes entradaTitulo{
     0%{ 
       opacity: 0;  
@@ -183,12 +179,11 @@ $width1: $width - 350;
   @media only screen and (min-width: 401px) and (max-width: 768px) {
     .inicio {
       display:flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       margin-left:25%;
       margin-right:25%;
     }
-
     .ubicacion{
       width: 150px;
       height: 100px;
@@ -236,7 +231,7 @@ $width1: $width - 350;
   @media only screen and (max-width: 400px) {
     .inicio {
       display:flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       margin-left:25%;
       margin-right:25%;
