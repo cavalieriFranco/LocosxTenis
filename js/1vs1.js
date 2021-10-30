@@ -35,3 +35,4 @@ $("#tituloPartidos").css("color","rgba(245, 245, 245, 0.543)")
         .delay(1000)
         .slideDown(2000);
         
+        
