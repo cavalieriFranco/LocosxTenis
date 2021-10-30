@@ -1,4 +1,4 @@
-let informacion = "./json/datos.json";
+let informacion = 'json/datos.json';
 
 $.getJSON(informacion, function (respuesta,estado){
     if(estado === "success"){
